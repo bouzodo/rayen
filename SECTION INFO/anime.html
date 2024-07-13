@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="logorafeha.jpg" type="image/x-icon">
+    <title>LYCEE RAFEHA</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #282c34; /* Dark background for contrast */
+            color: rgb(181, 210, 210); /* Default text color */
+            font-family: 'Cursive', sans-serif; /* Font family */
+            text-align: center;
+        }
+
+        h1 {
+            margin: 20px 0;
+            -webkit-text-fill-color: rgb(181, 210, 210);
+            -webkit-text-stroke: 1.2px rgba(0, 0, 0, 0.5); /* Subtle stroke for depth */
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        #x {
+            animation: slideIn 1s forwards;
+        }
+
+        #y {
+            animation: slideIn 3s forwards;
+        }
+
+        #z {
+            animation: slideIn 5s forwards;
+            -webkit-text-stroke: 1.2px rgb(255, 3, 3); /* Red stroke for emphasis */
+            -webkit-text-fill-color: rgb(255, 3, 3);
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Optional: Style for a loading spinner (if needed) */
+        .spinner {
+            margin-top: 20px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 4px solid rgb(255, 3, 3);
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="x">WELCOME</h1>
+    <h1 id="y">TO</h1>
+    <h1 id="z">LYCEE RAFEHA</h1>
+    <div class="spinner"></div> <!-- Optional loading spinner -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                window.location.href = "2eme.html";
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

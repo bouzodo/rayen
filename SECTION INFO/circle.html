@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LYCEE RAFEHA</title>
+    <link rel="shortcut icon" href="logorafeha.jpg" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Circle with Video Background</title>
+    <link rel="shortcut icon" href="logorafeha.jpg" type="image/x-icon" />
+    <title>LYCEE RAFEHA</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+      }
+      .container {
+          position: relative;
+        width: 100%;
+        max-width: 800px;
+        height: 450px;
+        overflow: hidden;
+      }
+      .loader {
+          position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 10px solid #00f2ff;
+        border-top-color: rgb(163, 3, 255);
+        animation: spin 1s infinite linear;
+        z-index: 2;
+        background-color: transparent;
+      }
+      .loader.hidden {
+        display: none;
+      }
+      @keyframes spin {
+        0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+      .download-bar {
+        width: 300px;
+        height: 20px;
+        overflow: hidden;position: absolute;text-align: center;border: 3px solid white;
+      }
+      .progress {
+        width: 0%;
+        height: 100%;
+        background-color: #ffffff;
+        animation: download 5s;
+      }
+      @keyframes download {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+      .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 8, 255);
+    font-size: 14px;
+    -webkit-text-stroke: 1px;
+}
+
+    </style>
+  </head>
+  <body>
+      <div class="download-bar">
+        <div class="progress"></div>
+        <div class="progress-text">0%</div> <!-- Added for displaying progress percentage -->
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var video = document.querySelector(".video");
+        var loader = document.querySelector(".progress");
+        setTimeout(function () {
+          loader.classList.add("hidden");
+          window.location.href = "anime.html";
+        }, 5000);
+        
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+            var loader = document.querySelector(".loader");
+            var progress = document.querySelector(".progress");
+            var progressText = document.querySelector(".progress-text");
+
+            var percent = 0;
+            var interval = setInterval(function () {
+                percent += 1;
+                progress.style.width = percent + "%";
+                progressText.textContent = percent + "%";
+
+                if (percent >= 100) {
+                    clearInterval(interval);
+                    loader.classList.add("hidden");
+                    window.location.href = "anime.html";
+                }
+            }, 40); // Adjust interval for smoother animation
+        });
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+

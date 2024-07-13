@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      :root {
+        --bg-color: black;
+        --text-color: white;
+      }
+      body.dark {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+      }
+      #section {
+        text-align: center;
+        background-color: aqua;
+        color: rgb(250, 221, 184);
+        font-family: monospace;
+        margin-top: 20%;
+      }
+      h1 {
+        text-align: center;
+        backdrop-filter: blur(8px);
+      }
+      #video-background {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+      .video-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -1;
+      }
+      h1 {
+        font-family: monospace;
+        -webkit-text-stroke: 0.5px;
+        -webkit-text-stroke: 1.2px;
+        background-color: transparent;
+        border: 1px solid white;
+        box-shadow: 2px 4px 10px white;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: serif;
+      }
+      #con {
+        margin-top: 1%;
+        display: block;
+      }
+      h1:hover {
+        background-color: aliceblue;
+      }
+      #img {
+        width: 80px;
+        margin: auto;
+        display: block;
+      }
+      #img:hover {
+        color: #010708;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #000);
+      }
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .button {
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: aqua;
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: 2s;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .button {
+        animation: ry 2s 1s;
+        background: linear-gradient(rgb(82, 255, 14), white);
+        color: #050801;
+        width: 100%;
+        box-shadow: 0 0 5px #feffff, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+          0 0 200px #03e9f4;
+        box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+          0 0 200px #03e9f4;
+        box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+          0 0 200px #03e9f4;
+      }
+      .button:first-child {
+        filter: hue-rotate(225deg);
+      }
+      .button:last-child {
+        filter: hue-rotate(90deg);
+      }
+      .button span {
+        position: absolute;
+        display: block;
+      }
+      .button span:nth-child(1) {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background: linear-gradient(90deg, transparent, #03e9f4);
+        animation: animate1 1s infinite;
+      }
+      @keyframes animate1 {
+        0% {
+          left: -100%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+      .button span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 10px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #03e9f4);
+        animation: animate2 1s infinite;
+      }
+      @keyframes animate2 {
+        0% {
+          top: -100%;
+        }
+        100% {
+          top: 100%;
+        }
+      }
+      .button span:nth-child(3) {
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 10px;
+        background: linear-gradient(270deg, transparent, #03e9f4);
+        animation: animate3 1s infinite;
+      }
+      @keyframes animate3 {
+        0% {
+          right: -100%;
+        }
+        100% {
+          right: 100%;
+        }
+      }
+      .button span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 10px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #03e9f4);
+        animation: animate4 1s infinite;
+      }
+      @keyframes animate4 {
+        0% {
+          bottom: -100%;
+        }
+        100% {
+          bottom: 100%;
+        }
+      }
+      #in {
+        background-color: transparent;
+        border: none;
+        color: #03e9f4;
+        width: 100px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: xx-large;
+        cursor: pointer;
+      }
+      #er {
+        text-align: center;
+      }
+      body {
+        background-color: black;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LYCEE RAFEHA</title>
+    <link rel="shortcut icon" href="logorafeha.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="video-container">
+      <video autoplay muted loop id="video-background">
+        <source src="rayen.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div id="er">
+      <div class="button">
+        <a href="contactrafeha.html">
+          <span></span><span></span><span></span><span></span>
+          <div id="sv"><img src="logo1.png" id="img" /></div>
+        </a>
+      </div>
+    </div>
+    <div id="con">
+      <h1><a href="premier.html">PREMIERE ANNEE</a></h1>
+      <h1><a href="3eme.html">SECTION INFORMATIQUE</a></h1>
+      <h1><a href="science.html">SECTION SCIENCE</a></h1>
+      <h1><a href="tech.html">SECTION TECHNIQUE</a></h1>
+      <h1><a href="sectionlettre.html">SECTION LETTRE</a></h1>
+      <h1><a href="3emeecoo.html">SECTION ECONOMIE</a></h1>
+      <h1><a href="math.html">SECTION MATH</a></h1>
+      <h1><a href="score.html">SCORE BAC</a></h1>
+      <h1><a href="bacprincipale.html">BAC PRINCIPALE</a></h1>
+      <h1><a href="NEWS.html">NEWS</a></h1>
+    </div>
+  </body>
+</html>

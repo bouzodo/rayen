@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         body{
+          background-color: black;
+      }
+        #fd{
+            font-family: monospace;font-size:small;
+        }
+        input{
+            outline: none;background: transparent;border: none;border-bottom: 3px solid black;
+          }
+        #arabic{
+            text-align: center;background-color: azure;width: 70%;margin: auto;opacity: 96%;
+        }
+        LABEL{
+            font-family: fantasy;-webkit-text-fill-color: blueviolet;-webkit-text-stroke: 1px;
+        }
+        h1{
+            font-family: fantasy;-webkit-text-fill-color: rgb(187, 194, 218);-webkit-text-stroke: 0.5px;
+            text-decoration: underline;
+        }
+        h3{
+            font-family: fantasy
+        }
+        #m0{
+            font-size: 50%;font-family: monospace;margin-top: 30%;
+        }
+        #m,#m1,#m2,#m3,#m4,#m5,#m6,#m7,#m8,#m9,#m10,#m11,#m12,#m13,#m14,#m15,#m16,#m17,#m18,#m19,#m20,#m21,#m22,#m23,#m24
+        ,#m25,#m26,#m27,#m28,#m29,#m30,#m31,#m32,#m33,#m34{
+            font-size: small;font-family: monospace;-webkit-text-stroke: 1px;
+        }
+        #video-background {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; z-index: -1;
+      }
+      .video-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden; z-index: -1;
+      }
+      .rr{
+          text-align: center;width: 10%;
+      }
+      #yt{
+        font-family: monospace;-webkit-text-fill-color: rgb(187, 194, 218);
+      -webkit-text-stroke: 1px;
+      text-decoration: underline;text-align: center;-webkit-text-fill-color:rgb(218, 218, 210);font-size: 50px;
+    }      #img{
+        width: 50px;margin: auto;background-color: rgba(0, 255, 255, 0.7);border-radius: 30%;
+      }
+      #img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYCEE RAFEHA</title>
+    <link rel="shortcut icon" href="logorafeha.jpg" type="image/x-icon">
+</head>
+<body>
+    <a href="science.html">
+        <img src="1712489134297.png" id="img">
+        </a>
+    <h1 id="yt">3EME SCIENCE</h1>
+    <div class="video-container">
+        <video autoplay muted loop id="video-background">
+          <source src="rayen.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    <div id="arabic">
+        <h1>ARABIC</h1>
+        <label for="">ORAL :</label><br>
+        <input type="number" id="c1" placeholder="Oral">
+        <p></p>
+        <label for="">CONTROLE 2 :</label><br>
+        <input type="number" id="c2"placeholder="Controle N°1"><p></p>
+        <label for="">SYNTHESE :</label><br>
+        <input type="number" id="s1" placeholder="Synthese"><p></p>
+        <input type="text" id="sp" class="rr" disabled><p></p>
+    </div>
+    <div id="arabic">
+        <h1>ENGLISH</h1>
+        <label for="">ORAL :</label><br>
+        <input type="number" id="c3"placeholder="Oral"><p></p>
+        <label for="">CONTROLE 2 :</label><br>
+        <input type="number" id="c4" placeholder="Controle N°1"><p></p>
+        <label for="">SYNTHESE :</label><br>
+        <input type="number" id="s2" placeholder="Synthese"><p></p>
+        <input type="text" id="sp2" class="rr" disabled>
+    </div>
+    <div id="arabic">
+        <h1>FRANCAIS</h1>
+        <label for="">ORAL :</label><br>
+        <input type="number" id="c5"placeholder="Oral"><p></p>
+        <label for="">CONTROLE 2 :</label><br>
+        <input type="number" id="c6"placeholder="Controle N°1"><p></p>
+        <label for="">SYNTHESE :</label><br>
+        <input type="number" id="s3"placeholder="Synthese"><p></p>
+        <input type="text" id="sp3" class="rr" disabled></div>
+    <div id="arabic">
+        <h1>PHYSIQUE</h1>
+        <label for="">TP :</label><br>
+        <input type="number" id="c7"placeholder="TP"><p></p>
+        <label for="">CONTROLE 1 :</label><br>
+        <input type="number" id="c8"placeholder="Controle N°1"><p></p>
+        <label for="">SYNTHESE :</label><br>
+        <input type="number" id="s4" placeholder="synthese"><p></p>
+        <input type="text" id="sp4" class="rr" disabled>
+    </div>
+    <div id="arabic">
+        <h1>MATH</h1>
+        <label for="">CONTROLE 1 :</label><br>
+        <input type="number" id="c9" placeholder="Controle N°1"><p></p>
+        <label for="">SYNTHESE :</label><br>
+        <input type="number" id="s5" placeholder="Synthese"><p></p>
+        <input type="text" id="sp5" class="rr" disabled>
+    </div>
+    <div id="arabic">
+        <h1>INFORMATIQUE</h1>
+        <label for="">CONTROLE 1 :</label><br>
+        <input type="number" id="c10"placeholder="Controle N°1"><p></p>
+        <label for="">CONTROLE 1 :</label><br>
+        <input type="number" id="c11"placeholder="Controle N°2"><p></p>
+        <label for="">SYNTHESE :</label><br>
+        <input type="number" id="s6"placeholder="Synthese"><p></p>
+        <input type="text" id="sp6" class="rr" disabled>
+    </div>
+    <div id="arabic">
+        <h1>SCIENCE</h1>
+        <label for="">CONTROLE 1 :</label><br>
+        <input type="number" id="c12"placeholder="Controle N°1"><p></p>
+        <label for="">CONTROLE 2 :</label><br>
+        <input type="number" id="c13"placeholder="Controle N°2"><p></p>
+        <label for="">SYNTHESE :</label><br>
+        <input type="number" id="s7"placeholder="Synthese"><p></p>
+        <input type="text" id="sp7" class="rr" disabled>
+    </div>
+    <div id="arabic">
+        <h1>ISLAMIQUE</h1>
+        <label for="">CONTROLE 1 :</label><br>
+        <input type="number" id="c1200"placeholder="Controle N°1"><p></p>
+        <label for="">CONTROLE 2 :</label><br>
+        <input type="number" id="c1300"placeholder="Controle N°2"><p></p>
+        <label for="">SYNTHESE :</label><br>
+        <input type="number" id="s400"placeholder="Synthese"><p></p>
+        <input type="text" id="sp400" class="rr" disabled>
+    </div>
+    <div id="arabic">
+        <h1>HISTORY</h1>
+        <label for="">ORAL :</label><br>
+        <input type="number" id="c14"placeholder="Oral"><p></p>
+        <label for="">CONTROLE 1 :</label><br>
+        <input type="number" id="c15"placeholder="Controle N°1"><p></p>
+        <label for="">SYNTHESE :</label><br>
+        <input type="number" id="s8"placeholder="Synthese"><p></p>
+        <input type="text" id="sp8" class="rr" disabled>
+    </div>
+    <div id="arabic">
+        <h1>GEOGRAPHIE</h1>
+        <label for="">ORAL :</label><br>
+        <input type="number" id="c16"placeholder="Oral"><p></p>
+        <label for="">CONTROLE 1 :</label><br>
+        <input type="number" id="c17"placeholder="Controle N°1"><p></p>
+        <label for="">SYNTHESE :</label><br>
+        <input type="number" id="s9"placeholder="Synthese"><p></p>
+        <input type="text" id="sp9" class="rr" disabled>
+    </div>
+    <div id="arabic">
+        <h1>PHILOSOPHIE</h1>
+        <label for="">ORAL :</label><br>
+        <input type="number" id="c18"placeholder="oral"><p></p>
+        <label for="">CONTROLE 1 :</label><br>
+        <input type="number" id="c19"placeholder="Controle N°1"><p></p>
+        <label for="">SYNTHESE :</label><br>
+        <input type="number" id="s10"placeholder="Synthese"><p></p>
+        <input type="text" id="sp10" class="rr" disabled>
+    </div>
+    <div id="arabic">
+        <h1>OPTION</h1>
+        <label for="">ORAL :</label><br>
+        <input type="number" id="c20"placeholder="Oral"><p></p>
+        <label for="">CONTROLE 1 :</label><br>
+        <input type="number" id="c21"placeholder="Controle N°1"><p></p>
+        <label for="">SYNTHESE :</label><br>
+        <input type="number" id="s11"placeholder="Synthesee"><p></p>
+        <input type="text" id="sp11" class="rr" disabled>
+    </div>
+    <div id="arabic">
+        <h1>SPORT</h1>
+        <label for="">ORAL :</label><br>
+        <input type="number" id="c22"placeholder="Oral"><p></p>
+        <label for="">CONTROLE 1 :</label><br>
+        <input type="number" id="c23"placeholder="Controle N°1"><p></p>
+        <label for="">SYNTHESE :</label><br>
+        <input type="number" id="s12"placeholder="Synthese"><p></p>
+        <input type="text" id="sp12" class="rr" disabled>
+    </div><p></p>
+    <div id="arabic">
+        <div>
+            <h1 id="df">00.00</h1>
+            <h2 id="fd"></h2>
+        </div>
+    </div><p></p>
+    <div id="arabic">
+     <input type="submit" value="SUBMIT" id="sub" >
+    </div>
+<script src="3scsc.js"></script>
+</body>
+</html>
