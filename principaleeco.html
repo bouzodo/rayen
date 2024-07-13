@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LYCEE RAFEHA</title>
+<link rel="shortcut icon" href="logorafeha.jpg" type="image/x-icon">
+<style>
+    label {
+        font-family:monospace;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: black;
+    }
+    .container {
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 40px 5px white;width: 70%;text-align: center;
+    }
+    h1 {
+        margin-bottom: 20px;
+        font-family: cursive;
+    }
+    .input-group {
+        margin-bottom: 15px;
+    }
+    .input-group label {
+        display: inline-block;
+        width: 100px;
+        text-align: left;
+    }
+    .input-group input {
+        width: 200px;
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+    .result {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    #moyenne, #math, #Hg, #Eco, #Gestion, #francais, #english,#Sport,#option,#Philo,#Arabic,#Info {
+        outline: none;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid black;width: 20%;
+    }
+    #on{
+        font-family: monospace;background-color: aqua;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Principale Bac Eco</h1>
+    <div class="input-group">
+        <label for="math">Math:</label>
+        <input type="number" id="math" min="0" step="any" oninput="calculateScore()">
+    </div>
+    <div class="input-group">
+        <label for="Hg">Hg:</label>
+        <input type="number" id="Hg" min="0" step="any" oninput="calculateScore()">
+    </div>
+    <div class="input-group">
+        <label for="Eco">Eco:</label>
+        <input type="number" id="Eco" min="0" step="any" oninput="calculateScore()">
+    </div>
+    <div class="input-group">
+        <label for="Gestion">Gestion:</label>
+        <input type="number" id="Gestion" min="0" step="any" oninput="calculateScore()">
+    </div>
+    <div class="input-group">
+        <label for="francais">Français:</label>
+        <input type="number" id="francais" min="0" step="any" oninput="calculateScore()">
+    </div>
+    <div class="input-group">
+        <label for="english">English:</label>
+        <input type="number" id="english" min="0" step="any" oninput="calculateScore()">
+    </div>
+    <div class="input-group">
+        <label for="Arabic">Arabic:</label>
+        <input type="number" id="Arabic" min="0" step="any" oninput="calculateScore()">
+    </div>
+    <div class="input-group">
+        <label for="Philo">Philo:</label>
+        <input type="number" id="Philo" min="0" step="any" oninput="calculateScore()">
+    </div>
+    <div class="input-group">
+        <label for="Info">Info:</label>
+        <input type="number" id="Info" min="0" step="any" oninput="calculateScore()">
+    </div>
+    <div class="input-group">
+        <label for="Sport">Sport:</label>
+        <input type="number" id="Sport" min="0" step="any" oninput="calculateScore()">
+    </div>
+    <div class="input-group">
+        <label for="option">Option:</label>
+        <input type="number" id="option" min="0" step="any" oninput="calculateScore()">
+    </div>
+    <div class="result" id="result">Votre Moyenne</div><br>
+    <div class="result" id="resultd"></div>
+</div>
+
+<script>
+    function calculateScore() {
+        let b = parseFloat(document.getElementById('math').value) || 0;
+        let c = parseFloat(document.getElementById('Hg').value) || 0;
+        let d = parseFloat(document.getElementById('Eco').value) || 0;
+        let e = parseFloat(document.getElementById('Gestion').value) || 0;
+        let f = parseFloat(document.getElementById('francais').value) || 0;
+        let g = parseFloat(document.getElementById('english').value) || 0;
+        let h = parseFloat(document.getElementById('Arabic').value) || 0;
+        let i = parseFloat(document.getElementById('Philo').value) || 0;
+        let ii = parseFloat(document.getElementById('Info').value) || 0;
+        let j = parseFloat(document.getElementById('option').value) || 0;
+        let k = parseFloat(document.getElementById('Sport').value) || 0;
+        if (b > 20 || b < 0) {
+            math.style.cssText = "border-bottom: 3px solid red";
+        } else {
+            math.style.cssText = "border-bottom: 3px solid green";
+        }
+        if (c > 20 || c < 0) {
+            Hg.style.cssText = "border-bottom: 3px solid red";
+        } else {
+            Hg.style.cssText = "border-bottom: 3px solid green";
+        }
+        if (d > 20 || d < 0) {
+            Eco.style.cssText = "border-bottom: 3px solid red";
+        } else {
+            Eco.style.cssText = "border-bottom: 3px solid green";
+        }
+        if (e > 20 || e < 0) {
+            Gestion.style.cssText = "border-bottom: 3px solid red";
+        } else {
+            Gestion.style.cssText = "border-bottom: 3px solid green";
+        }
+        if (f > 20 || f < 0) {
+            francais.style.cssText = "border-bottom: 3px solid red";
+        } else {
+            francais.style.cssText = "border-bottom: 3px solid green";
+        }
+        if (g > 20 || g < 0) {
+            english.style.cssText = "border-bottom: 3px solid red";
+        } else {
+            english.style.cssText = "border-bottom: 3px solid green";
+        }
+        if (h > 20 || h < 0) {
+            Arabic.style.cssText = "border-bottom: 3px solid red";
+        } else {
+            Arabic.style.cssText = "border-bottom: 3px solid green";
+        }
+        if (i > 20 || i < 0) {
+            Philo.style.cssText = "border-bottom: 3px solid red";
+        } else {
+            Philo.style.cssText = "border-bottom: 3px solid green";
+        }
+        if (ii > 20 || ii < 0) {
+            Info.style.cssText = "border-bottom: 3px solid red";
+        } else {
+            Info.style.cssText = "border-bottom: 3px solid green";
+        }
+        if (j > 20 || j < 0) {
+            option.style.cssText = "border-bottom: 3px solid red";
+        } else {
+            option.style.cssText = "border-bottom: 3px solid green";
+        }
+        if (k > 20 || k < 0) {
+            Sport.style.cssText = "border-bottom: 3px solid red";
+        } else {
+            Sport.style.cssText = "border-bottom: 3px solid green";
+        }
+        let score =(b *2 + c *2 + d*3 + e*3 + f  + g +h +i +j +k+ii)/16;
+        document.getElementById('result').textContent = "Votre Moyenne est : " + score.toFixed(2);
+    }
+</script>
+</body>
+</html>
